@@ -177,23 +177,16 @@
 
                     <ul class="portfolio-filters">
                       <li class="active">
-                        <a class="filter btn btn-sm btn-link" id="button_articles">Projects</a>
+                        <a class="filter btn btn-sm btn-link" id="button_projects">Projects</a>
                       </li>
-
                       <li>
-                        <a class="filter btn btn-sm btn-link" id="button_awards">Research Area</a>
+                        <a class="filter btn btn-sm btn-link" id="button_completed">Completed Projects</a>
                       </li>
-
                       <li>
-                        <a class="filter btn btn-sm btn-link" id="button_conferences">Completed Projects</a>
+                        <a class="filter btn btn-sm btn-link" id="button_area">Research Area</a>
                       </li>
-
                       <li>
-                        <a class="filter btn btn-sm btn-link" id="button_projects">Current Research</a>
-                      </li>
-
-                      <li>
-                        <a class="filter btn btn-sm btn-link" id="button_publications">Popular News Articles</a>
+                        <a class="filter btn btn-sm btn-link" id="button_current">Current Research</a>
                       </li>
                     </ul>
                     <hr>
@@ -224,16 +217,12 @@
 
       <!-- Custom JS scripts -->
       <script src="ajax.js"></script>
-      <script src="portfolio_articles.js"></script>
-      <script src="portfolio_awards.js"></script>
-      <script src="portfolio_conferences.js"></script>
-      <script src="portfolio_projects.js"></script>
-      <script src="portfolio_publications.js"></script>
-      <script src="portfolio.js"></script>
+      <script src="research_projects.js"></script>
+      <script src="research.js"></script>
 
       <script type="text/javascript">
         $(() => {
-          $('#button_articles').trigger('click');
+          $('#button_projects').trigger('click');
         });
       </script>
       <!-- Custom JS scripts -->
