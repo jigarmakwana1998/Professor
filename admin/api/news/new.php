@@ -2,18 +2,30 @@
 require("../../class/db.php");
 require("../../class/news.php");
 
-// get authorised data
+$file = $_FILES["newslocation"];
 $title = $_POST["title"];
-$description = $_POST["image"];
-$date = $_POST["date"];
 
 $db = new Database();
-$instance = new News($db);
-$instance->Initialize($title, $description, $date);
 
-
-if ($instance->Submit() === TRUE) {
-    echo "Success";
-} else {
-    echo "Error";
+$news = new News($db);
+$news->Initialize($title);
+if ($news->Submit() === True) {
+    if ($file['name'] !== '') {
+        $image = new Image();
+        $image->Initialize($file);
+        $status = $news->UploadImage($image);   
+        if ($status === True) {
+            echo 'Success';
+        }
+        else {
+            echo 'Error uploading image';
+        }
+    }
+    else {
+        echo 'Success';
+    }
 }
+else {
+  echo "Error";
+}
+

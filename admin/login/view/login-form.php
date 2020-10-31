@@ -22,7 +22,7 @@
                         <label for="username">Username</label><span id="user_info" class="error-info"></span>
                     </div>
                     <div>
-                        <input name="user_name" id="user_name" type="text"
+                        <input name="user_name" id="username" type="text"
                             class="demo-input-box">
                     </div>
                 </div>

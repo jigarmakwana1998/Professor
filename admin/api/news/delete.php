@@ -10,14 +10,11 @@ $db = new Database();
 $instance = new News($db);
 
 if ($delete) {
-    $result = $instance->Delete($id);
-    if ($result) {
-        $result = "Success";
-    } else {
-        $result = "Error";
-    }
-} else {
-    $result = "Error";
+  $result = $instance->Delete($id);
+  if ($result) {
+    echo "Success";
+  }
+  else {
+    echo "Error";
+  }
 }
-
-echo $result;

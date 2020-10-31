@@ -12,11 +12,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       $row['date_start'] = date_format($date, "M, Y");
       $row['date_end'] = date_format($date, "M, Y");
     }
+    $result->free_result();
     echo json_encode($rows);
   }
 }
 
 unset($rows, $date);
-$result->free_result();
 $db->close();
 ?>

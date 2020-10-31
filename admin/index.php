@@ -49,3 +49,10 @@
     <input type="file" placeholder="Image" name="avatarlocation" /><br>
     <input type="submit" value="Create" />
 </form>
+
+<h1>News</h1>
+<form action="api/news/new.php" method="post" enctype="multipart/form-data">
+    <input type="text" placeholder="Title" name="title" /><br>
+    <input type="file" placeholder="Image" name="newslocation" /><br>
+    <input type="submit" value="Create" />
+</form>

@@ -19,7 +19,7 @@ class Member
 
     function getMemberById($memberId)
     {
-        $query = "select * FROM registered_users WHERE id = ?";
+        $query = "select * FROM admin WHERE id = ?";
         $paramType = "i";
         $paramArray = array($memberId);
         $memberResult = $this->ds->select($query, $paramType, $paramArray);
@@ -30,7 +30,7 @@ class Member
     public function processLogin($username, $password)
     {
         $passwordHash = md5($password);
-        $query = "select * FROM registered_users WHERE user_name = ? AND password = ?";
+        $query = "select * FROM admin WHERE username = ? AND password = ?";
         $paramType = "ss";
         $paramArray = array($username, $passwordHash);
         $memberResult = $this->ds->select($query, $paramType, $paramArray);

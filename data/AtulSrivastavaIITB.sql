@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 22, 2020 at 01:25 PM
+-- Generation Time: Oct 31, 2020 at 07:59 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -25,6 +25,17 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `username` varchar(200) NOT NULL,
+  `password` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `awards`
 --
 
@@ -40,7 +51,8 @@ CREATE TABLE `awards` (
 --
 
 INSERT INTO `awards` (`id`, `title`, `description`, `date`) VALUES
-(1, 'award 1', 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document', '2000-01-01');
+(1, 'award api 1', 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document', '2020-10-26'),
+(3, 'api award', 'api description', '2020-10-26');
 
 -- --------------------------------------------------------
 
@@ -50,8 +62,7 @@ INSERT INTO `awards` (`id`, `title`, `description`, `date`) VALUES
 
 CREATE TABLE `news` (
   `id` int(11) NOT NULL,
-  `title` varchar(500) NOT NULL,
-  `image` blob NOT NULL
+  `title` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -65,10 +76,10 @@ CREATE TABLE `projects` (
   `title` varchar(500) NOT NULL,
   `place` varchar(200) NOT NULL,
   `role` varchar(200) NOT NULL,
-  `sponser` varchar(200) NOT NULL,
+  `sponser` varchar(200) DEFAULT NULL,
   `duration` varchar(20) NOT NULL,
-  `date_start` datetime NOT NULL,
-  `date_end` datetime NOT NULL
+  `date_start` date DEFAULT NULL,
+  `date_end` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -76,9 +87,9 @@ CREATE TABLE `projects` (
 --
 
 INSERT INTO `projects` (`id`, `title`, `place`, `role`, `sponser`, `duration`, `date_start`, `date_end`) VALUES
-(1, 'api project test', 'place ', 'role ', '', 'duration', '2020-10-15 00:00:00', '2020-10-15 00:00:00'),
-(2, 'api project 1', 'place ', 'role ', '', 'duration', '2020-10-15 00:00:00', '2020-10-15 00:00:00'),
-(3, 'api project 1', 'place ', 'role ', '', 'duration', '2020-10-15 00:00:00', '2020-10-15 00:00:00');
+(1, 'api project test', 'place ', 'role ', 'sponser', 'duration', '2020-10-26', '2020-10-26'),
+(3, 'api project 1', 'place ', 'role ', '', 'duration', '2020-10-15', '2020-10-15'),
+(4, 'api title ', 'api place', 'api role', 'api sponser', 'api duration', '2020-10-26', '2020-10-26');
 
 -- --------------------------------------------------------
 
@@ -101,11 +112,16 @@ CREATE TABLE `publications` (
 --
 
 INSERT INTO `publications` (`id`, `type`, `title`, `description`, `place`, `authors`, `date`) VALUES
-(1, 'book', 'book 1', NULL, NULL, 'shashank kumar, jigar makwana, anurag fogawat', '2020-10-22'),
+(1, 'book', 'book 1', 'null', 'place 1', 'shashank kumar, jigar makwana, anurag fogawat', '2020-10-24'),
 (6, 'article', 'article1', 'desc1', 'place1', 'author1', '2020-10-22'),
-(7, 'conference', 'conference1', 'desc1', 'place1', 'author1', '2020-10-22'),
 (8, 'journal', 'journal1', 'desc1', 'place1', 'author1', '2020-10-22'),
-(9, 'news', 'news1', 'desc1', 'place1', 'author1', '2020-10-22');
+(9, 'news', 'news1', 'desc1', 'place1', 'author1', '2020-10-22'),
+(10, 'conference', 'news1', 'desc1', 'place1', 'author1', '2020-10-22'),
+(11, 'article', 'api titile', 'api description', 'api place', 'api authors', '2020-10-26'),
+(12, 'book', 'api titile', 'api description', 'api place', 'api authors', '2020-10-26'),
+(13, 'conference', 'api titile', 'api description', 'api place', 'api authors', '2020-10-26'),
+(14, 'journal', 'api titile', 'api description', 'api place', 'api authors', '2020-10-26'),
+(15, 'news', 'api titile', 'api description', 'api place', 'api authors', '2020-10-26');
 
 -- --------------------------------------------------------
 
@@ -119,18 +135,8 @@ CREATE TABLE `students` (
   `designation` varchar(200) DEFAULT NULL,
   `degree` set('mtech','phd','post','') NOT NULL DEFAULT 'mtech',
   `title` varchar(200) NOT NULL,
-  `description` varchar(500) DEFAULT NULL,
-  `avatar` mediumblob DEFAULT NULL
+  `description` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `students`
---
-
-INSERT INTO `students` (`id`, `name`, `designation`, `degree`, `title`, `description`, `avatar`) VALUES
-(3, 'name1', 'designation1', 'mtech', 'title1', 'desc1', NULL),
-(4, 'name1', 'designation1', 'phd', 'title1', 'desc1', NULL),
-(5, 'name1', 'designation1', 'post', 'title1', 'desc1', NULL);
 
 --
 -- Indexes for dumped tables
@@ -174,31 +180,31 @@ ALTER TABLE `students`
 -- AUTO_INCREMENT for table `awards`
 --
 ALTER TABLE `awards`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `projects`
 --
 ALTER TABLE `projects`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `publications`
 --
 ALTER TABLE `publications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,59 +1,72 @@
 <?php
 
+require_once('image.php');
+
 class News
 {
     public $id;
     public $title;
-    public $image;
+
     public $conn;
 
     function __construct($db)
     {
-
-        $this->id = NULL;
         $this->title = NULL;
         $this->conn = $db->Connect();
     }
-    function Initialize($title)
-    {
-        $this->title = $title;
-    }
 
+    function Initialize($t)
+    {
+        $this->title = $t;
+    }
 
     public function Submit()
     {
-        $sql = "INSERT INTO `news` (`title`, `image`)
-        VALUES (?,?)";
+        $sql = "INSERT INTO `news` (`title`)
+        VALUES (?)";
 
         $query = $this->conn->prepare($sql);
-        $query->bind_param('ss', $this->title, $this->image);
+        $query->bind_param('s', $this->title);
 
         if ($query->execute()) {
+            $this->id = $this->conn->insert_id;
             return TRUE;
         } else {
+            echo mysqli_error($this->conn);
             return FALSE;
         }
     }
 
     public function Delete($id)
     {
-        $sql = "DELETE FROM `news` WHERE id={$id};";
+        $sql = "DELETE FROM `news` WHERE id = {$id};";
         $result = $this->conn->query($sql);
-        // Execute the query
+        $image = new Image();
+        $img_path = $image->location . 'news/' .  $id . '.png';
+        if (file_exists($img_path)) {
+            unlink($img_path);
+        }
         return $result;
     }
 
+    public function UploadImage($avatar) 
+    {
+        if ($avatar->Extension()) {
+            $img_name = 'news/' . $this->id . '.png';
+            $status = $avatar->Upload($img_name); 
+            return $status;
+        }
+        else {
+            return false;
+        }
+    } 
+
     public function Update($id)
     {
-        $sql = "UPDATE news SET title='$this->title', image='$this->image' WHERE id='$id'";
+        $sql = "UPDATE news SET title='$this->title' WHERE id='$id'";
         $result = $this->conn->query($sql);
-        // Execute the update statement
-        echo mysqli_error($this->conn);
-        if ($result) {
-            return TRUE;
-        } else {
-            return FALSE;
-        }
+        $this->id = $id;
+        return $result;
     }
 
     public function FetchAll()
@@ -65,18 +78,15 @@ class News
             return json_encode(array("message" => "No entry found."));
         } else {
             // Get the results in an array
-            $users = array();
-
+            $news = array();
             while ($row = $result->fetch_assoc()) {
-                $user_instance = array(
+                $news_instance = array(
                     'id' => $row['id'],
                     'title' => $row['title'],
-                    'image' => $row['image'],
                 );
-
-                array_push($users, $user_instance);
+                array_push($news, $news_instance);
             }
-            return json_encode($users);
+            return json_encode($news);
         }
     }
 }

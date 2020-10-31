@@ -87,7 +87,7 @@ class Student
         $result = $this->conn->query($sql);
         if ($result->num_rows == 0) {
             // Return 404 - not found
-            return json_encode(array("message" => "User not found."));
+            return json_encode(array("message" => "No entry found."));
         } else {
             // Get the results in an array
             $users = array();
