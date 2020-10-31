@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 31, 2020 at 07:59 AM
+-- Generation Time: Oct 31, 2020 at 08:41 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -64,6 +64,13 @@ CREATE TABLE `news` (
   `id` int(11) NOT NULL,
   `title` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`id`, `title`) VALUES
+(4, 'News with no picture');
 
 -- --------------------------------------------------------
 
@@ -135,8 +142,16 @@ CREATE TABLE `students` (
   `designation` varchar(200) DEFAULT NULL,
   `degree` set('mtech','phd','post','') NOT NULL DEFAULT 'mtech',
   `title` varchar(200) NOT NULL,
-  `description` varchar(500) DEFAULT NULL
+  `description` varchar(500) DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`id`, `name`, `designation`, `degree`, `title`, `description`, `is_active`) VALUES
+(18, 'test', 'test', 'mtech', 'test', 'test', 1);
 
 --
 -- Indexes for dumped tables
@@ -186,7 +201,7 @@ ALTER TABLE `awards`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `projects`
@@ -204,7 +219,7 @@ ALTER TABLE `publications`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
