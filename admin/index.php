@@ -1,3 +1,42 @@
+<?php
+require_once './login/session.php';
+$log = checkuser();
+if (!$log) {
+    header('Location: login/index.php');
+}
+
+?>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .login_info {
+        width: 100%;
+        height: 30px;
+        background-color: rgb(50, 50, 50);
+        color: white;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .logout_button {
+        padding: 2px 5px;
+        border-radius: 5px;
+        background-color: rgb(227, 15, 41);
+    }
+
+    .logout_button:hover {
+        cursor: pointer;
+    }
+</style>
+<div class="login_info">
+    you are logged in as <?php echo ($_SESSION['user_name']) ?>
+    <span class="logout_button" onclick="(function(){window.location.href = './login/logout.php'})()"> Logout </span>
+</div>
+
 <h1>Awards</h1>
 <form action="api/awards/new.php" method="post">
     <input type="text" placeholder="Title" name="title" /><br>
