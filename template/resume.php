@@ -70,15 +70,8 @@
         </li>
 
         <li class="menu-item">
-          <a href="blog.html">Gallary</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="blog.html">Blog</a>
-            </li>
-            <li class="menu-item">
-              <a href="portfolio.html">Gallary</a>
-            </li>
-          </ul>
+          <a href="gallary.html">Gallary</a>
+
         </li>
 
         <li class="menu-item">
@@ -140,15 +133,8 @@
               </li>
 
               <li class="menu-item">
-                <a href="blog.html">Gallary</a>
-                <ul class="sub-menu">
-                  <li class="menu-item">
-                    <a href="blog.html">Blog</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="portfolio.html">Gallary</a>
-                  </li>
-                </ul>
+                <a href="gallary.html">Gallary</a>
+
               </li>
 
               <li class="menu-item">
@@ -169,65 +155,82 @@
           <div id="primary" class="content-area">
 
             <div id="content" class="page-content site-content single-post" role="main">
+              <div class="block-title">
+                <h2>Experience</h2>
+              </div>
               <div class="row">
 
                 <div class=" col-xs-12 col-sm-6 ">
-                  <div class="block-title">
-                    <h2>Education</h2>
-                  </div>
-
                   <div id="timeline_1" class="timeline clearfix">
                     <div class="timeline-item clearfix">
-                      <h5 class="item-period ">2009</h5>
-                      <span class="item-company">University of Studies</span>
-                      <h4 class="item-title">UI Design</h4>
-                      <p>Duis posuere, quam non imperdiet egestas, eros enim mattis mauris, in posuere lacus arcu quis felis. Etiam interdum erat non enim venenatis fermentum.</p>
+                      <h5 class="item-period ">Jul 2019-Present</h5>
+                      <h4 class="item-title">Professor, Dept of Mechanical Engineering</h4>
+                      <p>Indian Institute of Technology Bombay, Mumbai</p>
                     </div>
 
                     <div class="timeline-item clearfix">
-                      <h5 class="item-period ">2008</h5>
-                      <span class="item-company">University of Studies</span>
-                      <h4 class="item-title">Graphic Design</h4>
-                      <p>Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.</p>
+                      <h5 class="item-period ">Mar 2015-Jul 2019</h5>
+                      <h4 class="item-title">Associate Professor, Dept. of Mechanical Engineering</h4>
+                      <p>Indian Institute of Technology Bombay, Mumbai</p>
                     </div>
 
                     <div class="timeline-item clearfix">
-                      <h5 class="item-period ">2007</h5>
-                      <span class="item-company">University of Studies</span>
-                      <h4 class="item-title">Frontend Development</h4>
-                      <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
+                      <h5 class="item-period ">May 2011-Mar 2015</h5>
+                      <h4 class="item-title">Assistant Professor, Dept. of Mechanical Engineering</h4>
+                      <p>Indian Institute of Technology Bombay, Mumbai</p>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                      <h5 class="item-period ">Oct 2011-Nov 2011</h5>
+                      <h4 class="item-title">GCOE Visiting Professor: Graduate School of Science</h4>
+                      <p>Tohoku University, Sendai, Japan</p>
                     </div>
 
                   </div>
                 </div>
-
-                <div class=" col-xs-12 col-sm-6 ">
-                  <div class="block-title">
-                    <h2>Experience</h2>
+                <div id="timeline_2" class="timeline clearfix">
+                  <div class="timeline-item clearfix">
+                    <h5 class="item-period ">Sep 2008-Sep 2010</h5>
+                    <h4 class="item-title">JSPS Post Doctoral Research Fellow</h4>
+                    <p>Graduate School of Science, Tohoku University, Japan</p>
                   </div>
 
-                  <!-- Add professional experiences here -->
-                  <div id="timeline_2" class="timeline clearfix">
+                  <div class="timeline-item clearfix">
+                    <h5 class="item-period ">Jul 2005-Jun 2009</h5>
+                    <h4 class="item-title">Scientist-D</h4>
+                    <p>Raja Ramanna Centre for Advanced Technology, Indore, India</p>
                   </div>
 
+                  <div class="timeline-item clearfix">
+                    <h5 class="item-period ">Jul 2005-Apr 2011</h5>
+                    <h4 class="item-title">Scientist-E</h4>
+                    <p>Raja Ramanna Centre for Advanced Technology, Indore, India</p>
+                  </div>
+
+                  <div class="timeline-item clearfix">
+                    <h5 class="item-period ">Mar 2004-Jul 2005</h5>
+                    <h4 class="item-title">Dr. K.S. Krishnan Research Fellow</h4>
+                    <p>Raja Ramanna Centre for Advanced Technology, Indore, India</p>
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <footer class="site-footer clearfix">
-        <div class="footer-social">
-          <ul class="footer-social-links">
-            <li>
-              <a href="">Department Of Civil Engineering, IIT Bombay</a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-
     </div>
+
+    <footer class="site-footer clearfix">
+      <div class="footer-social">
+        <ul class="footer-social-links">
+          <li>
+            <a href="">Department Of Civil Engineering, IIT Bombay</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
   </div>
 
   <script src="js/jquery-2.1.3.min.js"></script>

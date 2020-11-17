@@ -1,3 +1,8 @@
+$('#button_conferences').on('click', () => {
+    LoadConferences();
+    object = [];
+});
+
 $('#button_articles').on('click', () => {
     LoadArticles();
     object = [];
@@ -5,11 +10,6 @@ $('#button_articles').on('click', () => {
 
 $('#button_books').on('click', () => {
     LoadBookChapters();
-    object = [];
-});
-
-$('#button_conferences').on('click', () => {
-    LoadConferences();
     object = [];
 });
 

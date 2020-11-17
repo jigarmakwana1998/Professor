@@ -20,6 +20,13 @@
   <link rel="stylesheet" href="css/main.css" type="text/css">
 
   <script src="js/modernizr.custom.js"></script>
+
+  <style>
+    .project-title {
+      font-size: 1.5em
+    }
+
+  </style>
 </head>
 
 <body class="page">
@@ -70,15 +77,8 @@
         </li>
 
         <li class="menu-item">
-          <a href="blog.html">Gallary</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="blog.html">Blog</a>
-            </li>
-            <li class="menu-item">
-              <a href="portfolio.html">Gallary</a>
-            </li>
-          </ul>
+        <a href="gallary.html">Gallary</a>
+
         </li>
 
         <li class="menu-item">
@@ -136,15 +136,8 @@
             </li>
 
             <li class="menu-item">
-              <a href="blog.html">Gallary</a>
-              <ul class="sub-menu">
-                <li class="menu-item">
-                  <a href="blog.html">Blog</a>
-                </li>
-                <li class="menu-item">
-                  <a href="portfolio.html">Gallary</a>
-                </li>
-              </ul>
+            <a href="gallary.html">Gallary</a>
+
             </li>
 
             <li class="menu-item">
@@ -180,13 +173,10 @@
                         <a class="filter btn btn-sm btn-link" id="button_projects">Projects</a>
                       </li>
                       <li>
-                        <a class="filter btn btn-sm btn-link" id="button_completed">Completed Projects</a>
+                        <a class="filter btn btn-sm btn-link" id="button_area">Research Facilities</a>
                       </li>
                       <li>
-                        <a class="filter btn btn-sm btn-link" id="button_area">Research Area</a>
-                      </li>
-                      <li>
-                        <a class="filter btn btn-sm btn-link" id="button_current">Current Research</a>
+                        <a class="filter btn btn-sm btn-link" id="button_area">Research Interest</a>
                       </li>
                     </ul>
                     <hr>
@@ -218,6 +208,7 @@
       <!-- Custom JS scripts -->
       <script src="ajax.js"></script>
       <script src="research_projects.js"></script>
+      <script src="projects.js"></script>
       <script src="research.js"></script>
 
       <script type="text/javascript">

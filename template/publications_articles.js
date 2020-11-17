@@ -5,8 +5,8 @@ var LoadArticles = () => {
 			<div class=" col-xs-12 col-sm-12">
 	            <div class="p-20"></div>
 		        <div class="block-title">
-					<h1>Articles</h1>
-				</div>
+					<h2>Articles</h2>
+		        </div>
 				<div class="p-50"></div>
 
 		`;
@@ -17,8 +17,7 @@ var LoadArticles = () => {
 				<div class="info-list-w-icon" style="margin-top: -25px">
 					<div class="info-block-w-icon">
 						<div class="ci-text">
-							<p style="font-size: 1.1em;">${e.authors} <cite style="font-weight: 900;">${e.title}</cite>, <span style="opacity: .6;"> ${e.description}, ${e.date}</span></p>													
-							<p>${e.place}</p>
+							<p style="font-size: 1.1em;">${e.authors} <cite style="font-weight: 900;">${e.title}</cite>, <span style="opacity: .6;"> ${e.description}, ${e.place}, ${e.date}</span></p>													
 							<hr>
 						</div>
 					</div>

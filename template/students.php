@@ -105,15 +105,8 @@
         </li>
 
         <li class="menu-item">
-          <a href="blog.html">Gallary</a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="blog.html">Blog</a>
-            </li>
-            <li class="menu-item">
-              <a href="portfolio.html">Gallary</a>
-            </li>
-          </ul>
+          <a href="gallary.html">Gallary</a>
+
         </li>
 
         <li class="menu-item">
@@ -170,15 +163,7 @@
             </li>
 
             <li class="menu-item">
-              <a href="blog.html">Gallary</a>
-              <ul class="sub-menu">
-                <li class="menu-item">
-                  <a href="blog.html">Blog</a>
-                </li>
-                <li class="menu-item">
-                  <a href="portfolio.html">Gallary</a>
-                </li>
-              </ul>
+              <a href="gallary.html">Gallary</a>
             </li>
 
             <li class="menu-item">
@@ -220,6 +205,14 @@
 
                       <li>
                         <a class="filter btn btn-sm btn-link" id="button_mtech">M.Tech</a>
+                      </li>
+                    </ul>
+                    <ul class="portfolio-filters">
+                      <li class="active">
+                        <a class="filter btn btn-sm btn-link" id="button_current">Current</a>
+                      </li>
+                      <li>
+                        <a class="filter btn btn-sm btn-link" id="button_alumni">Alumni</a>
                       </li>
                     </ul>
                     <hr>

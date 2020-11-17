@@ -36,62 +36,54 @@
   <!-- /Loading animation -->
   <div class="header-content clearfix lmpixels-navbar">
 
-<div class="text-logo">
-    <a href="index-2.html">
+    <div class="text-logo">
+      <a href="index-2.html">
         <div class="logo-symbol">A</div>
         <div class="logo-text">Atul <span>Srivastava</span></div>
-    </a>
-</div>
+      </a>
+    </div>
 
-<div class="site-nav mobile-menu-hide">
-    <ul class="leven-classic-menu site-main-menu">
+    <div class="site-nav mobile-menu-hide">
+      <ul class="leven-classic-menu site-main-menu">
         <li class="menu-item current-menu-item">
-            <a href="index.html">Home</a>
+          <a href="index.html">Home</a>
         </li>
 
         <li class="menu-item">
-            <a href="resume.php">Professional Experience</a>
+          <a href="resume.php">Professional Experience</a>
         </li>
 
         <li class="menu-item">
-            <a href="publications.php">Publications</a>
+          <a href="publications.php">Publications</a>
         </li>
 
         <li class="menu-item">
-            <a href="research.php">Research</a>
+          <a href="research.php">Research</a>
         </li>
 
         <li class="menu-item">
-            <a href="students.php">Students</a>
+          <a href="students.php">Students</a>
         </li>
 
         <li class="menu-item">
-            <a href="awards.php">Awards</a>
+          <a href="awards.php">Awards</a>
         </li>
 
         <li class="menu-item">
-            <a href="blog.html">Gallary</a>
-            <ul class="sub-menu">
-                <li class="menu-item">
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li class="menu-item">
-                    <a href="portfolio.html">Gallary</a>
-                </li>
-            </ul>
+          <a href="gallary.html">Gallary</a>
         </li>
 
         <li class="menu-item">
-            <a href="contact.html">Contact</a>
+          <a href="contact.html">Contact</a>
         </li>
-    </ul>
-</div>
+      </ul>
+    </div>
 
-<a class="menu-toggle mobile-visible">
-    <i class="fa fa-bars"></i>
-</a>
-</div>
-<!-- Scroll To Top Button -->
+    <a class="menu-toggle mobile-visible">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!-- Scroll To Top Button -->
   <div class="lmpixels-scroll-to-top"><i class="lnr lnr-chevron-up"></i></div>
   <!-- /Scroll To Top Button -->
 
@@ -102,68 +94,61 @@
       <!-- <header id="site_header" class="header"> -->
       <div class="header-content clearfix">
 
-<div class="text-logo">
-    <a href="index-2.html">
-        <div class="logo-symbol">A</div>
-        <div class="logo-text">Atul <span>Srivastava</span></div>
-    </a>
-</div>
+        <div class="text-logo">
+          <a href="index-2.html">
+            <div class="logo-symbol">A</div>
+            <div class="logo-text">Atul <span>Srivastava</span></div>
+          </a>
+        </div>
 
-<div class="site-nav mobile-menu-hide">
-    <ul class="leven-classic-menu site-main-menu">
-        <li class="menu-item">
-            <a href="index.html">Home</a>
-        </li>
+        <div class="site-nav mobile-menu-hide">
+          <ul class="leven-classic-menu site-main-menu">
+            <li class="menu-item">
+              <a href="index.html">Home</a>
+            </li>
 
-        <li class="menu-item">
-            <a href="resume.php">Professional Experience</a>
-        </li>
+            <li class="menu-item">
+              <a href="resume.php">Professional Experience</a>
+            </li>
 
-        <li class="menu-item">
-            <a href="publications.php">Publications</a>
-        </li>
+            <li class="menu-item">
+              <a href="publications.php">Publications</a>
+            </li>
 
-        <li class="menu-item">
-            <a href="research.php">Research</a>
-        </li>
+            <li class="menu-item">
+              <a href="research.php">Research</a>
+            </li>
 
-        <li class="menu-item">
-            <a href="students.php">Students</a>
-        </li>
+            <li class="menu-item">
+              <a href="students.php">Students</a>
+            </li>
 
-        <li class="menu-item current-menu-item">
-            <a href="awards.php">Awards</a>
-        </li>
+            <li class="menu-item current-menu-item">
+              <a href="awards.php">Awards</a>
+            </li>
 
-        <li class="menu-item">
-            <a href="blog.html">Gallary</a>
-            <ul class="sub-menu">
-                <li class="menu-item">
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li class="menu-item">
-                    <a href="portfolio.html">Gallary</a>
-                </li>
-            </ul>
-        </li>
+            <li class="menu-item">
+              <a href="gallary.html">Gallary</a>
 
-        <li class="menu-item">
-            <a href="contact.html">Contact</a>
-        </li>
-    </ul>
-</div>
+            </li>
 
-<a class="menu-toggle mobile-visible">
-    <i class="fa fa-bars"></i>
-</a>
-</div>
+            <li class="menu-item">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
       <!-- </header> -->
       <!-- /Header -->
 
       <div id="main" class="site-main">
         <div id="main-content" class="single-page-content">
           <div id="primary" class="content-area">
-          <div class="p-50"></div>
+            <div class="p-50"></div>
 
             <!-- <div class="page-title">
                 <h1>Portfolio</h1>
@@ -171,20 +156,22 @@
 
             <div id="content" class="page-content site-content single-post" role="main">
 
-              <div class="row">
-                <div class=" col-xs-12 col-sm-12 ">
-                  <!-- Portfolio Content -->
-                  <div id="portfolio_content_q" class="portfolio-content">
-                    <hr>
-                    <!-- Insert data based on category selected -->
-                    <div class="row" id="data">
-                    </div>
-
-                  </div>
+              <!-- <div class="row">
+                <div class=" col-xs-12 col-sm-12 "> -->
+              <!-- Portfolio Content -->
+              <div id="portfolio_content_q" class="portfolio-content">
+                <div class="block-title">
+                  <h2>Awards</h2>
                 </div>
+                <!-- Insert data based on category selected -->
+                <div class="row" id="data">
+                </div>
+
               </div>
             </div>
           </div>
+          <!-- </div>
+          </div> -->
 
           <footer class="site-footer clearfix">
             <div class="footer-social">

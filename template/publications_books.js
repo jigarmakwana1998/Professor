@@ -1,28 +1,32 @@
 var LoadBookChapters = () => {
-	GetAjaxData('db_books.php');
-	$(document).ajaxComplete(() => {
-		let html = `
+    GetAjaxData('db_books.php');
+    $(document).ajaxComplete(() => {
+        let html = `
 			<div class=" col-xs-12 col-sm-12">
 	            <div class="p-20"></div>
 		        <div class="block-title">
 					<h2>Book Chapter</h2>
-		        </div>
+				</div>
+				<div class="p-50"></div>
+				
 		`;
 
-		if (object.length > 0) {
-			object.forEach((e) => {
-				html += `
-					<p>${e.title}</p>
-					<p>${e.authors}</p>
-					<p>${e.description}</p>
-					<p>${e.date}</p>
-					<p>${e.place}</p>
-					<hr>
+        if (object.length > 0) {
+            object.forEach((e) => {
+                html += `
+				<div class="info-list-w-icon" style="margin-top: -25px">
+					<div class="info-block-w-icon">
+						<div class="ci-text">
+							<p style="font-size: 1.1em;">${e.authors} <cite style="font-weight: 900;">${e.title}</cite>, <span style="opacity: .6;"> ${e.description}, ${e.place}, ${e.date}</span></p>													
+							<hr>
+						</div>
+					</div>
+				</div>
 				`;
-			});
-		}
-		html += '</div>';
+            });
+        }
+        html += '</div>';
 
-		$('#data').html(html);
-	});
+        $('#data').html(html);
+    });
 };

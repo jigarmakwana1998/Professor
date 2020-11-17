@@ -13,9 +13,9 @@ var LoadStudents = (type) => {
                 html += `
 				<div class=" col-xs-12 col-sm-6">
 					<div class="testimonial-item" style="padding-bottom: 0px">
-						<div class="testimonial-content" style="max-height: 200px; height: 200px;">
+						<div class="testimonial-content col-12" style="max-height: 200px; height: 200px; min-width: 575px;">
 							<div class="students-picture">
-								<img src="img/testimonials/testimonial-1.jpg" alt="Billy Adams" />
+								<img src="img/avatars/${e.id}.jpg" alt="Billy Adams" />
 							</div>
 
 							<div class="students-author-info">
