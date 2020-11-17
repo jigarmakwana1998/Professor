@@ -60,6 +60,20 @@
             height: 15px;
             border-radius: 110%;
         }
+        
+        table {
+            /* font-family: arial, sans-serif; */
+            /* border-collapse: collapse; */
+            border: 0px solid #dddddd;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 0px solid #dddddd;
+            text-align: left;
+            padding: 0px;
+        }
     </style>
 </head>
 
@@ -198,38 +212,55 @@
 
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="./img/carousel/GroupMembers.jpg" alt="First Slide" style="height:auto; width:1440px;">
-                                            <div class="carousel-caption" style="position: absolute; top: 50px; left: 200px;">
-                                                <h1 style="font-size: 50px; font-weight: bolder; color: rgb(218, 218, 218);">Welcome to the Webpage</h1>
-                                                <h2>of Professor Atul Srivastava</h2>
-                                                <div class="mask"></div>
+                                            <img src="./img/carousel/HomePage1.jpg" alt="First Slide" style="height:auto; width:1440px;">
+                                            <!-- <div class="carousel-caption" style="position: absolute; top: 50px; left: 200px;"> -->
+                                            <!-- <h1 style="font-size: 50px; font-weight: bolder; color: rgb(218, 218, 218);">Welcome to the Webpage</h1>
+                                                <h2>of Professor Atul Srivastava</h2> -->
+                                            <!-- <div class="mask"></div> -->
 
-                                            </div>
+                                            <!-- </div> -->
                                         </div>
 
-                                        <div class="carousel-item">
-                                            <img src="./img/carousel/3.jpg" alt="Third Slide" style="height:auto; width:1440px;">
-                                            <div class="carousel-caption" style="position: absolute; top: 500px; left: -900px;">
-                                                <h1>Los Angeles</h1>
-                                                <p>LA is always so much fun!</p>
-                                            </div>
+                                        <div class="carousel-item" style="background-color: black; width: 1440px; text-align: center;">
+                                            <img src="./img/carousel/HomePage2.jpg" alt="Second Slide" style="height:800px; width: auto; margin-left: auto; margin-right: auto;">
                                         </div>
-                                        <div class="carousel-item">
-                                            <video autoplay muted loop id="myVideo" style="height:auto; width:1440px;">
-                                                <source src="./img/carousel/mixkit.mp4" type="video/mp4">
+                                        <div class="carousel-item" style="background-color: black; width: 1440px; text-align: center;">
+                                            <img src="./img/carousel/HomePage3.jpg" alt="Second Slide" style="height:800px; width: auto; margin-left: auto; margin-right: auto;">
+                                        </div>
+                                        <div class="carousel-item" style="background-color: black; width: 1440px; text-align: center;">
+                                            <img src="./img/carousel/HomePage4.jpg" alt="Second Slide" style="height: auto; width: 1440px; margin-left: auto; margin-right: auto;">
+                                        </div>
+                                        <div class="carousel-item" style="background-color: black; width: 1440px; text-align: center;">
+                                            <video autoplay muted loop id="myVideo" style="height:800px; width: auto;;">
+                                                <source src="./img/carousel/Home1.mp4" type="video/mp4">
                                                 Your browser does not support HTML5 video.
-                                              </video>
-                                            <!-- <img src="./img/2.jpg" alt="Second Slide" > -->
-                                            <div class="carousel-caption" style="position: absolute; top: 500px; left: -900px;">
+                                            </video>
+                                        </div>
+                                        <div class="carousel-item" style="background-color: black; width: 1440px; text-align: center;">
+                                            <video autoplay muted loop id="myVideo" style="height:800px; width: auto;;">
+                                                <source src="./img/carousel/HomePage_Movie2.mp4" type="video/mp4">
+                                                Your browser does not support HTML5 video.
+                                            </video>
+                                        </div>
+                                        <div class="carousel-item" style="background-color: black; width: 1440px; text-align: center;">
+                                            <video autoplay muted loop id="myVideo" style="height:auto; width: 1440px;;">
+                                                <source src="./img/carousel/HomePage_Movie3.mp4" type="video/mp4">
+                                                Your browser does not support HTML5 video.
+                                            </video>
+                                            <!-- <div class="carousel-caption" style="position: absolute; top: 500px; left: -900px;">
                                                 <h1>Los Angeles</h1>
                                                 <p>LA is always so much fun!</p>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <ol class="carousel-indicators" style="margin-left: auto; margin-right: auto;">
                                         <li data-target="#myCarousel" data-slide-to="0" style="margin-left: 10px; margin-right: 10px;" class="active"></li>
                                         <li data-target="#myCarousel" data-slide-to="1" style="margin-left: 10px; margin-right: 10px;"></li>
                                         <li data-target="#myCarousel" data-slide-to="2" style="margin-left: 10px; margin-right: 10px;"></li>
+                                        <li data-target="#myCarousel" data-slide-to="3" style="margin-left: 10px; margin-right: 10px;"></li>
+                                        <li data-target="#myCarousel" data-slide-to="4" style="margin-left: 10px; margin-right: 10px;"></li>
+                                        <li data-target="#myCarousel" data-slide-to="5" style="margin-left: 10px; margin-right: 10px;"></li>
+                                        <li data-target="#myCarousel" data-slide-to="6" style="margin-left: 10px; margin-right: 10px;"></li>
                                     </ol>
                                 </div>
 
@@ -241,7 +272,8 @@
                                 <div class="row" style="padding-left: 20px;">
                                     <div class="col-sm-12 col-md-4 col-lg-4">
                                         <div class="inner-content">
-                                            <div class="fill-block" style="background-image: url(img/main_photo.jpg);"></div>
+                                            <div class="fill-block" style="background-image: url(img/main_photo.jpg);">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-8 col-lg-8">
@@ -258,14 +290,36 @@
                                                 </div>
 
                                                 <h2 class="hp-main-title">Atul Srivastava</h2>
+                                                <table>
+                                                    <tr>
+                                                        <td>Professor, Department of Mechanical Engineering, Indian Institute of Technology Bombay</td>
+                                                        <td style="text-align: right;">2019-Present </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Associate Professor, Department of Mechanical Engineering, Indian Institute of Technology Bombay</td>
+                                                        <td style="text-align: right;">2015-2019</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Assistant Professor, Department of Mechanical Engineering, Indian Institute of Technology Bombay</td>
+                                                        <td style="text-align: right;">2011-2015</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>JSPS Postdoctoral fellow, Tohoku University, Japan</td>
+                                                        <td style="text-align: right;">2008-2011</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Scientist, Raja Ramanna Centre for Advanced Technology (RRCAT), Indore</td>
+                                                        <td style="text-align: right;">2005-2011</td>
+                                                    </tr>
+                                                </table>
+
                                                 <p style="text-align: justify;">
-                                                    Time-dependent and three dimensional distribution of fluid velocities and transported properties such as temperature and species concentration are required in a range of applications. However, generating such voluminous data through experiments has always
-                                                    been a challenge.
+                                                    Research interests: Coupled flow and thermal diagnostics, Two-phase heat transfer, Droplets/Interfaces, Nanofluids, Bioheat transfer, Non-intrusive measurements.
                                                 </p>
 
                                                 <div class="hp-buttons">
                                                     <a href="#" target="_blank" class="btn btn-primary">Download
-                                                            CV</a>
+                                                        CV</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -287,61 +341,34 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class=" col-xs-12 col-sm-6 ">
+                                    <div class=" col-xs-12 col-sm-12 ">
                                         <div class="info-list-w-icon">
                                             <div class="info-block-w-icon">
                                                 <div class="ci-icon">
-                                                    <i class="linecons linecons-pen"></i>
+                                                    <i class="lnr lnr-chevron-right"></i>
                                                 </div>
 
                                                 <div class="ci-text">
-                                                    <h4>Copywrite</h4>
-                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
-                                                        turpis tempus ex.
+                                                    <h4>Motivation</h4>
+                                                    <p>Time-dependent and three-dimensional distribution of fluid velocities and transported properties are required in a range of applications. However, generating such data through experiments has always
+                                                        been a challenge. Conventional probe-based techniques are intrusive in nature and are restricted to providing volume-averaged data only at a few select points. Time constants associated with such
+                                                        probes limit their applications in highly transient phenomena. Focus of our research group is to overcome this barrier of 3D unsteady whole field measurements using advanced measurement techniques
+                                                        that are completely inertia-free and non-intrusive. Experiments are complemented by numerical simulations. Some of the areas wherein the group has made significant impact include high heat flux management
+                                                        systems, nanofluids, two-phase heat transfer, coupled heat and mass transfer, droplets/interfaces and bio-heat transfer.
                                                     </p>
                                                 </div>
                                             </div>
-
                                             <div class="info-block-w-icon">
                                                 <div class="ci-icon">
-                                                    <i class="linecons linecons-display"></i>
+                                                    <i class="lnr lnr-chevron-right"></i>
                                                 </div>
 
                                                 <div class="ci-text">
-                                                    <h4>Web Design</h4>
-                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
-                                                        turpis tempus ex.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class=" col-xs-12 col-sm-6 ">
-                                        <div class="info-list-w-icon">
-
-                                            <div class="info-block-w-icon">
-                                                <div class="ci-icon">
-                                                    <i class="linecons linecons-shop"></i>
-                                                </div>
-
-                                                <div class="ci-text">
-                                                    <h4>Ecommerce</h4>
-                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
-                                                        turpis tempus ex.
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="info-block-w-icon">
-                                                <div class="ci-icon">
-                                                    <i class="linecons linecons-megaphone"></i>
-                                                </div>
-
-                                                <div class="ci-text">
-                                                    <h4>Marketing</h4>
-                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
-                                                        turpis tempus ex.
+                                                    <h4>Research group </h4>
+                                                    <p>The group comprises of some of the highly motivated PhD and M.Tech scholars, post-doctoral fellows and project staff working in areas such as two-phase heat transfer, droplets/interfacial heat transfer,
+                                                        double-diffusive transport phenomena, bio-heat transfer, heat transfer enhancement. Our research findings have been published in over 120 articles in leading international journals, which include
+                                                        Journal of Fluid Mechanics, Physics of Fluids, International journal of Heat and Mass Transfer, Scientific Reports-Nature etc. The impact made by the group is the result of dedicated and sincere
+                                                        efforts of about 12 PhD students, close to 50 M.Tech students and post-doctoral fellows. These students are now well placed in leading academic institutions (IITs, NITs) and R&D sectors.
                                                     </p>
                                                 </div>
                                             </div>
@@ -436,7 +463,8 @@
                                                 <div class="testimonial-content" style="height: 400px; background-image:url(img/testimonials/testimonial-1.jpg);background-repeat: no-repeat;background-size:cover; margin: 0;padding: 0px;">
                                                     <div style="background-color: rgba(255, 255, 255, 0.5); margin-top: 250px;height: 150px; padding: 10px;">
                                                         <div class="testimonial-author-info">
-                                                            <h5 class="testimonial-author" style="font-size: large;">Donec eu est vel metus consequat volutpat.</h5>
+                                                            <h5 class="testimonial-author" style="font-size: large;">
+                                                                Donec eu est vel metus consequat volutpat.</h5>
                                                             <!-- <p class="testimonial-firm">Rolling Thunder</p> -->
                                                         </div>
                                                         <div class="testimonial-text">
@@ -450,7 +478,8 @@
                                                 <div class="testimonial-content" style="height: 400px; background-image:url(img/testimonials/testimonial-2.jpg);background-repeat: no-repeat;background-size:cover; margin: 0;padding: 0px;">
                                                     <div style="background-color: rgba(255, 255, 255, 0.5); margin-top: 250px;height: 150px; padding: 10px;">
                                                         <div class="testimonial-author-info">
-                                                            <h5 class="testimonial-author" style="font-size: large;">Donec eu est vel metus consequat volutpat.</h5>
+                                                            <h5 class="testimonial-author" style="font-size: large;">
+                                                                Donec eu est vel metus consequat volutpat.</h5>
                                                             <!-- <p class="testimonial-firm">Rolling Thunder</p> -->
                                                         </div>
                                                         <div class="testimonial-text">
@@ -464,7 +493,8 @@
                                                 <div class="testimonial-content" style="height: 400px; background-image:url(img/testimonials/testimonial-3.jpg);background-repeat: no-repeat;background-size:cover; margin: 0;padding: 0px;">
                                                     <div style="background-color: rgba(255, 255, 255, 0.5); margin-top: 250px;height: 150px; padding: 10px;">
                                                         <div class="testimonial-author-info">
-                                                            <h5 class="testimonial-author" style="font-size: large;">Donec eu est vel metus consequat volutpat.</h5>
+                                                            <h5 class="testimonial-author" style="font-size: large;">
+                                                                Donec eu est vel metus consequat volutpat.</h5>
                                                             <!-- <p class="testimonial-firm">Rolling Thunder</p> -->
                                                         </div>
                                                         <div class="testimonial-text">
@@ -741,7 +771,8 @@
                                                 </div>
                                                 <div class="ci-text">
                                                     <h4>415-832-2000</h4>
-                                                    <p>Duis erat leo, aliquam laoreet fringilla quis, pretium vitae dui.</p>
+                                                    <p>Duis erat leo, aliquam laoreet fringilla quis, pretium vitae dui.
+                                                    </p>
                                                 </div>
                                             </div>
 
@@ -762,7 +793,8 @@
                                                 <div class="ci-text">
                                                     <h4><a href="https://lmpixels.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="244c4148484b64415c45495448410a474b49">[email&#160;protected]</a>
                                                     </h4>
-                                                    <p>Duis erat leo, aliquam laoreet fringilla quis, pretium vitae dui.</p>
+                                                    <p>Duis erat leo, aliquam laoreet fringilla quis, pretium vitae dui.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>

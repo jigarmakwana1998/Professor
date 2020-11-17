@@ -54,7 +54,7 @@ class Student
         $sql = "DELETE FROM `students` WHERE id = {$id};";
         $result = $this->conn->query($sql);
         $avatar = new Image();
-        $img_path = $avatar->location . 'avatars/' .  $id . '.png';
+        $img_path = $avatar->location . 'avatars/' .  $id . '.jpg';
         if (file_exists($img_path)) {
             unlink($img_path);
         }
@@ -64,7 +64,7 @@ class Student
     public function UploadImage($avatar) 
     {
         if ($avatar->Extension()) {
-            $img_name = 'avatars/' . $this->id . '.png';
+            $img_name = 'avatars/' . $this->id . '.jpg';
             $status = $avatar->Upload($img_name); 
             return $status;
         }

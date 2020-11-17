@@ -11,7 +11,7 @@ class Image
         // array of "name", "size, "type", "error"
         $this->file = NULL;
         $this->extension = NULL;
-        $this->location = '/opt/lampp/htdocs/professor/images/';
+        $this->location = '/opt/lampp/htdocs/Professor/template/img/';
         $this->allowed_size = 12000;
     }
 
@@ -24,7 +24,7 @@ class Image
     public function Extension()
     {
         $this->extension = pathinfo($this->file['name'], PATHINFO_EXTENSION);;
-        if ($this->extension === "png") {
+        if ($this->extension === "jpg") {
             return true;
         } else {
             return false;
